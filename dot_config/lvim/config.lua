@@ -11,7 +11,6 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "rose-pine"
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -94,6 +93,7 @@ lvim.builtin.treesitter.ensure_installed = {
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 
+-- Clipboard
 if vim.fn.has "wsl" == 1 then 
   vim.g.clipboard = {
     copy = {
@@ -170,7 +170,6 @@ lvim.plugins = {
     {"junegunn/fzf.vim"},
     {"junegunn/fzf"},
     {"tpope/vim-fugitive"},
-    {"rose-pine/neovim"},
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
