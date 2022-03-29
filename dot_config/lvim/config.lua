@@ -11,7 +11,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "onedarker"
+lvim.colorscheme = "rose-pine"
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -73,6 +73,7 @@ lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "right"
 lvim.builtin.nvimtree.show_icons.git = 0
+lvim.builtin.nvimtree.setup.view.width = 40
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
@@ -163,11 +164,13 @@ formatters.setup {
 --   },
 -- }
 
+
 -- Additional Plugins
 lvim.plugins = {
     {"junegunn/fzf.vim"},
     {"junegunn/fzf"},
     {"tpope/vim-fugitive"},
+    {"rose-pine/neovim"},
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
