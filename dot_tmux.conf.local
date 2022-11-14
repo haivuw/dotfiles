@@ -417,6 +417,8 @@ tmux_conf_uninstall_plugins_on_reload=true
 # # /!\ do not remove the previous line
 
 # ******* ME *********************************************
+set -g default-terminal "tmux-256color"
+set -ag terminal-overrides ",xterm-256color:RGB"
 
 # split panes using | and -
 bind \\ split-window -h

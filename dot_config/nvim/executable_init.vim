@@ -9,6 +9,7 @@ Plug 'tpope/vim-commentary'
 
 call plug#end()
 
+set clipboard=unnamedplus
 set termguicolors
 colorscheme nord
 set background=dark
@@ -28,6 +29,7 @@ set tabstop=2
 "########################## FZF ##############################
 
 nnoremap <silent> <C-p> :Files<CR>
+nnoremap <silent> <C-l> :Commands<CR>
 
 
 "########################## COC #################################

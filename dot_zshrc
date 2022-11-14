@@ -101,7 +101,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tm="tmux attach || tmux new"
-alias vi="lvim"
+alias vi="nvim"
+alias wezconf="vi /mnt/c/Program\ Files/WezTerm/wezterm.lua"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -114,4 +115,20 @@ eval $(thefuck --alias)
 # You can use whatever you want as an alias, like for Mondays:
 eval $(thefuck --alias FUCK)
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# bun completions
+[ -s "/home/hl/.bun/_bun" ] && source "/home/hl/.bun/_bun"
+
+# bun
+export BUN_INSTALL="/home/hl/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# cargo
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# deno
+export DENO_INSTALL="/home/hl/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
